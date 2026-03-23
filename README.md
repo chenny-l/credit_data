@@ -63,7 +63,7 @@ Based on the Gini score from the Random Forest model, the most predictive featur
 
 ![pic](visuals/rf_ginni.png)
 
-Attribute 5: `Credit amount`\
+Attribute 5: `Credit amount`
 
 Attribute 13: `Age`
 

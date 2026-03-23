@@ -79,14 +79,14 @@ This shows the **business intuition**: larger loans, customer age, existing acco
 
 ## Model Performance
 
-Neural Network:
+**Neural Network:**
 
 ![pic](visuals/nn.png)
 
 - True negative rate (good customers) ~ 59.42%
 - False negative rate (bad customers predicted as good) ~ 9.7%
 
-Logistic Regression: 
+**Logistic Regression:** 
 
 ![pic](visuals/lr.png)
 

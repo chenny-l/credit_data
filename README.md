@@ -63,11 +63,15 @@ Based on the Gini score from the Random Forest model, the most predictive featur
 
 ![pic](visuals/rf_ginni.png)
 
-Attribute 5: Credit amount
-Attribute 13: Age
-Attribute 2: Duration of credit
-Attribute 1: Status of existing checking account
-Attribute 8: Installment rate
+Attribute 5: `Credit amount`
+
+Attribute 13: `Age`
+
+Attribute 2: `Duration of credit`
+
+Attribute 1: `Status of existing checking account`
+
+Attribute 8: `Installment rate`
 
 This shows the **business intuition**: larger loans, customer age, existing account status, and repayment capacity are key indicators of creditworthiness.
 

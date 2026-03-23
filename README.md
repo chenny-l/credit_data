@@ -1,6 +1,6 @@
 # Credit Risk Analysis in SAS
 
-This project demonstrates credit risk modeling using SAS Studio. The full coding script is available [here](credit_data/blob/main/credit_risk.sas). 
+This project demonstrates credit risk modeling using SAS Studio. The full coding script is available [here](https://github.com/chenny-l/credit_data/blob/main/credit_risk.sas). 
 
 We worked with a multivariate dataset containing 1000 customers, 20 features, and a binary target variable:
 

@@ -1,12 +1,19 @@
-# Default Classification
+# Credit Risk Analysis in SAS
 
-This is a project that was done in SAS studio. Full coding script available here. 
+This project demonstrates credit risk modeling using SAS Studio. The full coding script is available [here](credit_data/blob/main/credit_risk.sas). 
 
-We have a multivariate credit data for 100 customers and contains 20 features and 1 target binary classification. if `class` = 1, then a good customer. If `class` = 2, bad. 
+We worked with a multivariate dataset containing 1000 customers, 20 features, and a binary target variable:
 
-we have 70% good customers and 30% bad customers in the data. 
+class = 1 → good customer
+class = 2 → bad customer
 
-The description for features as following: 
+The dataset contains 70% good customers and 30% bad customers.
+
+ ![pic](visuals/freq.png)
+
+## Feature Overview 
+
+The data was sourced from [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data).
 
 | #  | Attribute                           | Type        | Description / Possible Values                                                                                                                                                                                                                                            |
 | -- | ----------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -30,20 +37,69 @@ The description for features as following:
 | Attribute 18 | People liable for maintenance       | Numerical   | Number of people dependent on applicant                                                                                                                                                                                                                                  |
 | Attribute 19 | Telephone                           | Qualitative | A191: None <br> A192: Yes, registered under customer’s name                                                                                                                                                                                                              |
 | Attribute 20 | Foreign worker                      | Qualitative | A201: Yes <br> A202: No                                                                                                                                                                                                                                                  |
+## Data Preparation
+
+- The original dataset was cleaned using Python and converted from `.DAT` to `.CSV`.
+- The `CSV` file was uploaded into SAS Studio for analysis.
+- Initial exploration included checking for missing values, calculating descriptive statistics (mean, standard deviation), and understanding distributions.
+
+  ![pic](visuals/means_num.png)
+  
+- The target variable was set up as default, and categorical variables were encoded for modeling.
+
+![pic](visuals/add_var.png)
+
+## Modelling Approach
+
+We fitted several models to predict credit risk:
+
+1. Logistic Regression, serving as a baseline.
+2. Random Forest. We assessed non-linear interactions and variable importance.
+3. Neural Network. It captured complex patterns and non-linear relationships.
+
+## Feature Importance Highlights 
+Based on the Gini score from the Random Forest model, the most predictive features are:
+
+![pic](visuals/rf_ginni.png)
+
+Attribute 5: Credit amount
+Attribute 13: Age
+Attribute 2: Duration of credit
+Attribute 1: Status of existing checking account
+Attribute 8: Installment rate
+
+This shows the **business intuition**: larger loans, customer age, existing account status, and repayment capacity are key indicators of creditworthiness.
+
+![pic](visuals/rf_res.png)
+
+## Model Performance
+
+Neural Network:
+
+![pic](visuals/nn.png)
+
+- True negative rate (good customers) ~ 59.42%
+- False negative rate (bad customers predicted as good) ~ 9.7%
+
+Logistic Regression: 
+
+![pic](visuals/lr.png)
+
+![pic](visuals/lr_auc.png)
+
+- Area Under the ROC Curve (AUC) = 0.6696
+- Provides a solid baseline for binary classification.
 
 
-We cleaned the original `DAT` file to .csv file with Python, and uploadded the csv file o SAS for analysis. The oreiginal dataset can be found here. 
+## Business Implications
 
-In the first few steps, we checked the missing values, understanding the data and calculated some distributions (means, std) for numerical features. set up the target variable `default` and encode the categorical variables. 
+- Credit amount, age, duration, and account status are actionable variables for underwriting policies.
+- Model comparison: Neural networks capture more subtle patterns, while logistic regression provides interpretability for regulatory compliance.
 
-we then fitted a logistic regression model as baseline, ML models : random forest and neural network. 
-
-the picture above shows the predictive power for each feature according to their Gini score. The highest predictive power roghly in Attribute 5, 13, 2, 1, and attribute 8. which maps to credit amount, age, duration, status of existing chequing account. 
-
-neural networks looks like is good at capturing good customers (59.42% true negative rate), and false negative rate is 9.7%, i.e., the likelihood of identifying a defaulter as good customer. 
-
-we then fitted logistic regression model, achieving an AUC of 0.6696. 
- 
+Next Steps:
+- Expand the dataset for robustness and generalization.
+- Fine-tune models (hyperparameters, deeper networks) to improve predictive performance.
+- Integrate model outputs into a decision-support tool (SaaS) for credit analysts.
 
 
 

@@ -5,6 +5,7 @@ This project demonstrates credit risk modeling using SAS Studio. The full coding
 We worked with a multivariate dataset containing 1000 customers, 20 features, and a binary target variable:
 
 class = 1 → good customer
+
 class = 2 → bad customer
 
 The dataset contains 70% good customers and 30% bad customers.

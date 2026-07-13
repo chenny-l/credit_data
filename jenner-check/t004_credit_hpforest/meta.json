@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_credit_hpforest",
+  "source_file": "credit_risk.sas",
+  "source_blob_sha": "ca7a27ce6813331b199dd4d5035beb2ed3b7b320",
+  "source_commit": "9754a62308c9be39c69455369835429707316d13",
+  "notes": "Random forest (PROC HPFOREST) with the interval/nominal input split from the original, target default level=binary. Same statement as the original; data inline."
+}

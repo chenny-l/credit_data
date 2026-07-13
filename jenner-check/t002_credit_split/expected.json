@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-13T08:05:37.119808+00:00",
+  "_captured_run_id": "r_eb54849d0f8443e28bc838fb4ba090b8",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote credit (60 rows, 22 columns).",
+    "NOTE: PROC SURVEYSELECT completed.",
+    "NOTE: Wrote train (42 rows, 24 columns).",
+    "NOTE: Wrote test (18 rows, 24 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

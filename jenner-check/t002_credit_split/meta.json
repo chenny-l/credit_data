@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_credit_split",
+  "source_file": "credit_risk.sas",
+  "source_blob_sha": "ca7a27ce6813331b199dd4d5035beb2ed3b7b320",
+  "source_commit": "9754a62308c9be39c69455369835429707316d13",
+  "notes": "Binary default target from class + 70/30 PROC SURVEYSELECT split into train/test via multi-output DATA step. Same logic as the original; data supplied inline."
+}

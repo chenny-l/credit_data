@@ -1,0 +1,15 @@
+
+The SURVEYSELECT Procedure
+
+Selection Method     SRS
+Input Data Set       credit
+Number of Obs Read   60
+Sample Size          60
+Sampling Weight      1.0000
+                                                   The FREQ Procedure
+
+                                     Cumulative    Cumulative
+DEFAULT    Frequency    Percent     Frequency      Percent
+----------------------------------------------------------------
+0                 32     76.19           32        76.19
+1                 10     23.81           42       100.00

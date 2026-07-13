@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_credit_logistic",
+  "source_file": "credit_risk.sas",
+  "source_blob_sha": "ca7a27ce6813331b199dd4d5035beb2ed3b7b320",
+  "source_commit": "9754a62308c9be39c69455369835429707316d13",
+  "notes": "Baseline logistic regression: class param=ref on the 13 categorical attributes, model default(event='1'), scored onto the held-out test set (log_scored). Identical modeling statement to the original; data inline."
+}

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_credit_explore",
+  "source_file": "credit_risk.sas",
+  "source_blob_sha": "ca7a27ce6813331b199dd4d5035beb2ed3b7b320",
+  "source_commit": "9754a62308c9be39c69455369835429707316d13",
+  "notes": "Data exploration on the German Credit columns (Attribute1-20 + class). Original PROC IMPORT of german_credit_data.csv replaced with an inline DATA step of 60 rows; PROC CONTENTS/FREQ/MEANS unchanged."
+}

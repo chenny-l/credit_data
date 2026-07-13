@@ -1,0 +1,49 @@
+
+The SURVEYSELECT Procedure
+
+Selection Method     SRS
+Input Data Set       credit
+Number of Obs Read   60
+Sample Size          60
+Sampling Weight      1.0000
+
+                       The HPFOREST Procedure
+
+Model Information
+
+  Number of Features             20
+  Number of Observations         42
+  Number of Trees                100
+  OOB Misclassification          0.285714
+  Skipped (Missing/Invalid)      0
+
+Fit Statistics (Final Tree Count)
+
+  MiscAll                        0.0
+  MiscOob                        0.285714
+  Ntrees                         100
+
+Variable Importance
+
+  Variable                      NRules   Importance OOBImportance
+  --------                      ------   ---------- -------------
+  ATTRIBUTE13                       38     0.110246     0.093709
+  ATTRIBUTE5                        52     0.102863     0.087434
+  ATTRIBUTE1                        35     0.074664     0.063465
+  ATTRIBUTE3                        37     0.073775     0.062709
+  ATTRIBUTE17                       34     0.072551     0.061668
+  ATTRIBUTE2                        34     0.058127     0.049408
+  ATTRIBUTE14                       27     0.057601     0.048961
+  ATTRIBUTE6                        26     0.056355     0.047902
+  ATTRIBUTE16                       35     0.053643     0.045597
+  ATTRIBUTE4                        30     0.051043     0.043387
+  ATTRIBUTE11                       25     0.040987     0.034839
+  ATTRIBUTE12                       26     0.039626     0.033682
+  ATTRIBUTE7                        24     0.034952     0.029709
+  ATTRIBUTE15                       17     0.032533     0.027653
+  ATTRIBUTE9                        23     0.031491     0.026767
+  ATTRIBUTE8                        21     0.030677     0.026075
+  ATTRIBUTE20                       14     0.024154     0.020530
+  ATTRIBUTE10                       14     0.022345     0.018993
+  ATTRIBUTE18                        9     0.019730     0.016770
+  ATTRIBUTE19                        8     0.012638     0.010743

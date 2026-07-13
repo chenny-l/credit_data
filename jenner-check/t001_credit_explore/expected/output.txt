@@ -1,0 +1,56 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: credit
+Observations:  60
+Variables:     21
+
+Variables (in alphabetical order):
+
+  #  Variable     Type    Len  Format  Label
+---  -----------  ----  -----  ------  -----
+  1  Attribute1   Char      5          
+  2  Attribute10  Char      5          
+  3  Attribute11   Num      8          
+  4  Attribute12  Char      5          
+  5  Attribute13   Num      8          
+  6  Attribute14  Char      5          
+  7  Attribute15  Char      5          
+  8  Attribute16   Num      8          
+  9  Attribute17  Char      5          
+ 10  Attribute18   Num      8          
+ 11  Attribute19  Char      5          
+ 12  Attribute2    Num      8          
+ 13  Attribute20  Char      5          
+ 14  Attribute3   Char      5          
+ 15  Attribute4   Char      5          
+ 16  Attribute5    Num      8          
+ 17  Attribute6   Char      5          
+ 18  Attribute7   Char      5          
+ 19  Attribute8    Num      8          
+ 20  Attribute9   Char      5          
+ 21  class         Num      8          
+
+-------------------------------------------------------------------------------
+
+                                                   The FREQ Procedure
+
+                                   Cumulative    Cumulative
+class    Frequency    Percent     Frequency      Percent
+--------------------------------------------------------------
+1               46     76.67           46        76.67
+2               14     23.33           60       100.00
+                                                  The MEANS Procedure
+
+ Variable           N             Mean          Std Dev         Minimum           Maximum
+ ----------------------------------------------------------------------------------------
+ Attribute2        60       22.6000000       13.4103426       6.0000000        48.0000000
+ Attribute5        60     8457.5833333     3868.7134080     930.0000000     14988.0000000
+ Attribute8        60        2.7166667        1.0906640       1.0000000         4.0000000
+ Attribute11       60        2.3500000        1.1618950       1.0000000         4.0000000
+ Attribute13       60       44.6166667       15.0604338      19.0000000        70.0000000
+ Attribute16       60        2.5500000        1.1412898       1.0000000         4.0000000
+ Attribute18       60        1.6333333        0.4859611       1.0000000         2.0000000
+ class             60        1.2333333        0.4265219       1.0000000         2.0000000
+ ----------------------------------------------------------------------------------------

@@ -1,0 +1,76 @@
+
+The SURVEYSELECT Procedure
+
+Selection Method     SRS
+Input Data Set       credit
+Number of Obs Read   60
+Sample Size          60
+Sampling Weight      1.0000
+                                     
+---------------------------  --------
+Number of Observations Read        42
+Number of Observations Used        42
+
+            Response Profile            
+   Probability modeled is DEFAULT='1'   
+
+Ordered Value  DEFAULT   Total Frequency
+-------------  --------  ---------------
+            1  0                      32
+            2  1                      10
+
+                    Class Level Information                    
+
+Class          Levels  Values                                  
+-----------  --------  ----------------------------------------
+ATTRIBUTE1          4  A11 A12 A13 A14                         
+ATTRIBUTE3          5  A30 A31 A32 A33 A34                     
+ATTRIBUTE4         10  A40 A41 A410 A42 A43 A44 A45 A46 A48 A49
+ATTRIBUTE6          5  A61 A62 A63 A64 A65                     
+ATTRIBUTE7          5  A71 A72 A73 A74 A75                     
+ATTRIBUTE9          4  A91 A92 A93 A94                         
+ATTRIBUTE10         3  A101 A102 A103                          
+ATTRIBUTE12         4  A121 A122 A123 A124                     
+ATTRIBUTE14         3  A141 A142 A143                          
+ATTRIBUTE15         3  A151 A152 A153                          
+ATTRIBUTE17         4  A171 A172 A173 A174                     
+ATTRIBUTE19         2  A191 A192                               
+ATTRIBUTE20         2  A201 A202                               
+
+                                             
+---------------------------------------------
+Convergence criterion (GCONV=1E-8) satisfied.
+
+The LOGISTIC Procedure
+Response Variable: DEFAULT
+
+Criterion     Value
+---------  --------
+AIC          44.050
+-2 Log L     28.050
+SC           57.951
+
+             Analysis of Maximum Likelihood Estimates             
+
+Parameter    Estimate  Standard Error  Wald Chi-Square  Pr > ChiSq
+-----------  --------  --------------  ---------------  ----------
+Intercept    -11.0974          4.8734           5.1853      0.0228
+ATTRIBUTE2    -0.0677          0.0560           1.4582      0.2272
+ATTRIBUTE5     0.0000          0.0001           0.0024      0.9607
+ATTRIBUTE8    -0.1559          0.4902           0.1012      0.7504
+ATTRIBUTE11   -0.8970          0.6225           2.0765      0.1496
+ATTRIBUTE13    0.1478          0.0586           6.3660      0.0116
+ATTRIBUTE16    0.1185          0.4736           0.0627      0.8023
+ATTRIBUTE18    3.4614          1.9779           3.0625      0.0801
+
+                      Odds Ratio Estimates                       
+
+Effect       Point Estimate  95% Wald CL Lower  95% Wald CL Upper
+-----------  --------------  -----------------  -----------------
+ATTRIBUTE2            0.935              0.837              1.043
+ATTRIBUTE5            1.000              1.000              1.000
+ATTRIBUTE8            0.856              0.327              2.237
+ATTRIBUTE11           0.408              0.120              1.381
+ATTRIBUTE13           1.159              1.034              1.300
+ATTRIBUTE16           1.126              0.445              2.848
+ATTRIBUTE18          31.861              0.660           1537.767
